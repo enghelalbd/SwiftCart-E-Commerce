@@ -4,69 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SwiftCart E-Commerce</title>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--    Navbar -->
-    <div class="navbar bg-base-100 shadow-sm">
-      <!-- LEFT: Logo -->
-      <div class="navbar-start">
-        <!-- Mobile Menu -->
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
 
-          <!-- Mobile Menu Items -->
-          <ul
-            tabindex="-1"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
-          >
-            <li><a>Home</a></li>
-            <li><a>Products</a></li>
-            <li><a>About</a></li>
-            <li><a>Contact</a></li>
-          </ul>
+<header>
+      <nav class="navbar">
+        <h2 class="logo">SwiftCart</h2>
+        <ul>
+          <li>Home</li>
+          <li>Products</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        
+      </nav>
+    
+    <!--   Banner Section -->
+
+    <section class="features">
+      <h2>Why Choose us</h2>
+      <p>We provide the best shopping with top notiched services</p>
+
+      <div class="feature-box">
+        <div>
+          <h2>Fast Delivery</h2>
+          <p>
+            Get your orders deliverd to your droopstep quickly and effectively
+          </p>
         </div>
 
-        <!-- Logo -->
-        <a class="btn btn-ghost text-xl font-bold">SwiftCart</a>
+        <div>
+          <h2>24/7 Support</h2>
+          <p>
+           Our support team is available 24/7 to assist you with any inquiries or issues you may have.
+          </p>
+        </div>
+        <div>
+          <h2>Secure Payment</h2>
+          <p>
+            Experience safe and secure payment options for a worry-free shopping experience.
+          </p>
+        </div>
+        <div>
+          <h2>Easy Returns</h2>
+          <p>
+            Not satisfied with your purchase? Enjoy hassle-free returns with our easy return policy.
+          </p>
+        </div>
       </div>
-
-      <!-- CENTER: Menu -->
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>Products</a></li>
-          <li><a>About</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- RIGHT: Cart -->
-      <div class="navbar-end">
-        <button class="btn btn-ghost relative">Button</button>
-      </div>
-    </div>
+    </section>
 
     <script src="index.js"></script>
   </body>
